@@ -3,6 +3,7 @@
     "pnpm run lint:fix"
   ],
   "*.{css,scss}": [
-    "pnpm run stylelint:fix"
+    "pnpm run stylelint:fix",
+    "git add"
   ]
 }
