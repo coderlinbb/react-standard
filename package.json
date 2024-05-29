@@ -12,7 +12,8 @@
     "stylelint": "stylelint ./**/*.{css,scss}",
     "stylelint:fix": "stylelint ./**/*.{css,scss} --fix",
     "commit": "git-cz",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pre-commit": "lint-staged"
   },
   "dependencies": {
     "react": "^18.2.0",
