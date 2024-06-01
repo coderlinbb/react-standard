@@ -4,12 +4,23 @@ import viteLogo from "/vite.svg";
 
 import reactLogo from "./assets/react.svg";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Hello from "@/components/Hello";
+import { getMockData } from "@/api/user";
 
 function App() {
   const [count, setCount] = useState(1);
+  useEffect(() => {
+    const req = async () => {
+      const res = await getMockData({
+        name: "xxx",
+      });
+      console.log("res===>", res);
+      return res;
+    };
+    req();
+  }, []);
 
   return (
     <>
