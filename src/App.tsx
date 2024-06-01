@@ -1,15 +1,15 @@
-import './App.css'
+import "./App.css";
 
-import viteLogo from '/vite.svg'
+import viteLogo from "/vite.svg";
 
-import reactLogo from './assets/react.svg'
+import reactLogo from "./assets/react.svg";
 
-import { useState } from 'react'
+import { useState } from "react";
 
-import Hello from '@/components/Hello'
+import Hello from "@/components/Hello";
 
 function App() {
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(1);
 
   return (
     <>
@@ -37,7 +37,7 @@ function App() {
 
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
